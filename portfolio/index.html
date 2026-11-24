@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李明 · 个人作品集</title>
+  <meta name="description" content="李明的个人作品集 - 全栈开发者与产品设计师，展示精选项目与技能。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 背景装饰 -->
+  <div class="bg-decoration">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- 导航栏 -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">LM</span>
+        <span class="logo-text">李明</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">首页</a>
+        <a href="#about" class="nav-link">关于</a>
+        <a href="#skills" class="nav-link">技能</a>
+        <a href="#projects" class="nav-link">项目</a>
+        <a href="#contact" class="nav-link">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting reveal">👋 你好，我是</p>
+        <h1 class="hero-title reveal">
+          <span class="gradient-text">李 明</span>
+        </h1>
+        <h2 class="hero-subtitle reveal">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc reveal">
+          专注于构建优雅、高性能的 Web 应用与数字产品体验。热爱代码，也热爱设计，相信好的产品源于技术与美学的平衡。
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">查看作品</a>
+          <a href="#contact" class="btn btn-ghost">联系我</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num" data-target="6">0</span><span class="stat-label">年经验</span></div>
+          <div class="stat"><span class="stat-num" data-target="42">0</span><span class="stat-label">完成项目</span></div>
+          <div class="stat"><span class="stat-num" data-target="28">0</span><span class="stat-label">满意客户</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="avatar-ring">
+          <div class="avatar">
+            <span>LM</span>
+          </div>
+          <div class="orbit orbit-1"><div class="orbit-dot">⚛️</div></div>
+          <div class="orbit orbit-2"><div class="orbit-dot">🎨</div></div>
+          <div class="orbit orbit-3"><div class="orbit-dot">💡</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">01 / 关于我</p>
+        <h2 class="section-title">用代码创造价值</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon">🚀</div>
+          <h3>产品思维</h3>
+          <p>从用户需求出发，关注业务价值与使用体验，不止于把功能做出来，更追求把事情做对。</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">⚡</div>
+          <h3>工程能力</h3>
+          <p>熟练掌握前后端主流技术栈，注重代码质量、可维护性与系统性能，乐于推动工程化改进。</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">🤝</div>
+          <h3>团队协作</h3>
+          <p>擅长跨职能沟通，能在设计、产品与研发之间架起桥梁，推动项目高效落地交付。</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon">🌱</div>
+          <h3>持续学习</h3>
+          <p>保持对新技术的好奇心，坚持阅读与分享，在快速变化的行业中持续进化。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">02 / 技能栈</p>
+        <h2 class="section-title">我擅长的技术</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3>前端开发</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>React / Next.js</span><div class="bar"><i style="width:92%"></i></div></div>
+            <div class="skill-bar"><span>TypeScript</span><div class="bar"><i style="width:88%"></i></div></div>
+            <div class="skill-bar"><span>Vue 3</span><div class="bar"><i style="width:80%"></i></div></div>
+            <div class="skill-bar"><span>CSS / Tailwind</span><div class="bar"><i style="width:90%"></i></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>后端与服务</h3>
+          <div class="skill-bars">
+            <div class="skill-bar"><span>Node.js</span><div class="bar"><i style="width:85%"></i></div></div>
+            <div class="skill-bar"><span>Python</span><div class="bar"><i style="width:75%"></i></div></div>
+            <div class="skill-bar"><span>PostgreSQL</span><div class="bar"><i style="width:78%"></i></div></div>
+            <div class="skill-bar"><span>Docker / K8s</span><div class="bar"><i style="width:70%"></i></div></div>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3>设计与协作</h3>
+          <div class="skill-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Sketch</span>
+            <span class="tag">Git</span>
+            <span class="tag">敏捷开发</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">动效设计</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">技术写作</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">03 / 精选作品</p>
+        <h2 class="section-title">最近完成的项目</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-1"><span>📊</span></div>
+          <div class="project-body">
+            <h3>数据可视化平台</h3>
+            <p>面向企业的实时数据分析仪表盘，支持自定义图表、拖拽布局与多维度下钻。</p>
+            <div class="project-tags">
+              <span>React</span><span>D3.js</span><span>Node.js</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-2"><span>🛒</span></div>
+          <div class="project-body">
+            <h3>电商小程序</h3>
+            <p>全链路商城解决方案，包含商品管理、订单、支付、营销活动，日活 10 万+。</p>
+            <div class="project-tags">
+              <span>Vue 3</span><span>TypeScript</span><span>微服务</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-3"><span>✍️</span></div>
+          <div class="project-body">
+            <h3>AI 写作助手</h3>
+            <p>基于大语言模型的智能写作工具，支持多风格生成、润色与摘要，提升创作效率。</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>Python</span><span>LLM</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-4"><span>📱</span></div>
+          <div class="project-body">
+            <h3>健康追踪 App</h3>
+            <p>跨平台健康管理应用，记录运动、睡眠与饮食数据，提供个性化健康建议。</p>
+            <div class="project-tags">
+              <span>React Native</span><span>GraphQL</span><span>Redis</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-5"><span>🎓</span></div>
+          <div class="project-body">
+            <h3>在线教育平台</h3>
+            <p>支持直播、录播、互动答题的学习系统，服务数万名学员，完课率提升 35%。</p>
+            <div class="project-tags">
+              <span>Vue 3</span><span>WebRTC</span><span>Go</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-6"><span>🏢</span></div>
+          <div class="project-body">
+            <h3>企业官网系统</h3>
+            <p>可配置的多语言企业建站平台，可视化编辑内容，SEO 友好，秒级发布。</p>
+            <div class="project-tags">
+              <span>Next.js</span><span>Headless CMS</span><span>Tailwind</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <h2>让我们一起创造点什么 ✨</h2>
+        <p>有项目想法或合作意向？欢迎随时联系我，通常会在 24 小时内回复。</p>
+        <div class="contact-actions">
+          <a href="mailto:hello@example.com" class="btn btn-primary">📧 发送邮件</a>
+          <div class="social-links">
+            <a href="#" class="social" aria-label="GitHub">GitHub</a>
+            <a href="#" class="social" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" class="social" aria-label="Twitter">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 李明 · 用 ❤️ 与代码打造</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
