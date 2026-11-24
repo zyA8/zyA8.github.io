@@ -1,6 +1,6 @@
 // ===== 打字机效果 =====
 const typedEl = document.getElementById('typed');
-const phrases = ['全栈开发者', '产品设计师', '开源爱好者', '终身学习者'];
+const phrases = ['中低频量化研究员', '机器学习探索者', 'AI 工具实践者', '终身科研者'];
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
